@@ -271,7 +271,7 @@ En este caso se ha elegido desarrollar la aplicación mediante una **arquitectur
 
 ### Plantilla
 
-Puedes ver el código de la plantilla en el fichero [template.yaml](./cicd/template.yaml) del repositorio. Este código está basado en un BluePrint de AWS SAM, *Serverless API*.
+Puedes ver el código de la plantilla en el fichero [template.yaml](./template.yaml) del repositorio. Este código está basado en un BluePrint de AWS SAM, *Serverless API*.
 
 <details> <summary> Pulsa para ver el contenido del fichero </summary>
 
