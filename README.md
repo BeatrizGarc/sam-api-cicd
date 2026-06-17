@@ -27,7 +27,7 @@ En este caso se ha elegido desarrollar una aplicación a través del framework *
 
 ### Plantilla
 
-Puedes ver el código de la plantilla en el fichero [template.yaml](./bluegreen/template.yaml) del repositorio.
+Puedes ver el código de la plantilla en el fichero [template.yaml](./cicd/template.yaml) del repositorio.
 
 <details> <summary> Pulsa para ver el contenido del fichero </summary>
 
