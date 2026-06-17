@@ -11,8 +11,8 @@ Después de completar la práctica básica, estos ejercicios te permiten profund
 **Objetivo**: Crear un frontend web simple para consumir la API.
 
 **Instrucciones**:
-1. Ve a la carpeta `cliente-api-cicd/`
-2. Crea un archivo `index.html` simple:
+1. Consulta [EJERCICIOS_OPCIONALES.md](./EJERCICIOS_OPCIONALES.md) para crear un cliente web
+2. Sigue los pasos para crear un archivo `index.html`:
 
 ```html
 <!DOCTYPE html>

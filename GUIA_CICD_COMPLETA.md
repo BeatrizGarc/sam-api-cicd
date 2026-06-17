@@ -407,9 +407,9 @@ curl https://xxxxxx.execute-api.us-east-1.amazonaws.com/Prod/1
 }
 ```
 
-### 6.3 Usar un cliente web (Opcional)
+### 6.3 Crear un cliente web (Opcional)
 
-En la carpeta `cliente-api-cicd/` hay instrucciones para crear un frontend web que consuma la API.
+Consulta [EJERCICIOS_OPCIONALES.md](./EJERCICIOS_OPCIONALES.md) para instrucciones sobre cómo crear un frontend web que consuma la API.
 
 ---
 

@@ -646,7 +646,7 @@ Una vez que el despliegue en testing sea completado, obtén la URL de la API:
        -d '{"id":"1","name":"Mi Item"}'
      ```
 
-4. Alternativamente, usa el cliente web disponible en `cliente-api-cicd/`
+4. Alternativamente, puedes crear un cliente web propio (opcional)
 
 **Captura esperada**: Respuestas exitosas de la API en entorno de pruebas
 
@@ -694,9 +694,7 @@ Repite las pruebas del paso 9 pero usando la URL de producción.
 
 #### **Paso 13: Crear un cliente web (Opcional)**
 
-En la carpeta `cliente-api-cicd/` tienes instrucciones para crear un cliente web que consuma la API.
-
-Sigue las instrucciones allí para tener una interfaz visual para probar la API.
+Consulta [EJERCICIOS_OPCIONALES.md](./EJERCICIOS_OPCIONALES.md) para instrucciones sobre cómo crear un cliente web que consuma la API.
 
 ---
 
@@ -735,7 +733,7 @@ Crea un documento (PDF o Markdown) que incluya:
 
 ---
 
-Para probar la API creada, puedes crear un sencillo frontend a través de las instrucciones disponibles en la carpeta [cliente-api-cicd](./cliente-api-cicd/).
+Para probar la API creada, puedes usar herramientas como curl o Postman. Alternativamente, consulta [EJERCICIOS_OPCIONALES.md](./EJERCICIOS_OPCIONALES.md) para crear tu propio cliente web.
 
 **Realiza una breve memoria donde incluyas capturas de cada uno de los pasos realizados. Incluye también la URL al repositorio creado para esta práctica.**
 
