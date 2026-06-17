@@ -7,7 +7,7 @@ Si tienes poco tiempo, aquí está el flujo rápido para completar la práctica.
 ## ⚡ TL;DR (Too Long; Didn't Read)
 
 1. **Crea repositorio** en GitHub: https://github.com/new
-2. **Copia archivos** de `cicd/` a tu repo
+2. **Copia archivos** al repo
 3. **Copia `pipeline.yaml`** a `.github/workflows/pipeline.yaml`
 4. **Configura secretos** en GitHub (3 secrets de AWS)
 5. **Crea entorno** `testenv` con aprobación manual
@@ -30,7 +30,7 @@ cd sam-api-cicd
 git init
 
 # 2. Copiar archivos
-# Copiar contenido de sesiones_7_8_sam_cicd/cicd/
+# Copiar los archivos del proyecto SAM
 
 # 3. Crear estructura de workflows
 mkdir -p .github/workflows
