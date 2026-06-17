@@ -37,7 +37,11 @@ export const getAllItemsHandler = async (event) => {
 
   const response = {
     statusCode: 200,
-    body: JSON.stringify(items),
+    body: JSON.stringify({
+      message: "Items obtenidos exitosamente del servidor",
+      items: items,
+      timestamp: new Date().toISOString()
+    }),
     headers: {
       "Access-Control-Allow-Headers": "Content-Type",
       "Access-Control-Allow-Origin": "*",
