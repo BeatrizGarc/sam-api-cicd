@@ -12,8 +12,9 @@ let r2 = await axios.post(URL, d2);
 
 let res = await axios(URL);
 
+// La respuesta ahora tiene estructura {message, items, timestamp}
 let expected = [d2, d1];
-assert.deepStrictEqual(res.data, expected);
+assert.deepStrictEqual(res.data.items, expected);
 
 let URLItem1 = `${URL}1`;
 let res1 = await axios(URLItem1);
