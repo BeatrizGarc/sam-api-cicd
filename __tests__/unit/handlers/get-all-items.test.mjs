@@ -27,17 +27,17 @@ describe("Test getAllItemsHandler", () => {
     // Invoke helloFromLambdaHandler()
     const result = await getAllItemsHandler(event);
 
-    const expectedResult = {
-      statusCode: 200,
-      body: JSON.stringify(items),
-      headers: {
-        "Access-Control-Allow-Headers": "Content-Type",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET",
-      },
-    };
-
-    // Compare the result with the expected result
-    expect(result).toEqual(expectedResult);
+    // Verify the response structure
+    expect(result.statusCode).toBe(200);
+    expect(result.headers["Access-Control-Allow-Headers"]).toBe("Content-Type");
+    expect(result.headers["Access-Control-Allow-Origin"]).toBe("*");
+    expect(result.headers["Access-Control-Allow-Methods"]).toBe("GET");
+    
+    // Parse the body to check the response structure
+    const bodyParsed = JSON.parse(result.body);
+    expect(bodyParsed).toHaveProperty("message");
+    expect(bodyParsed).toHaveProperty("items");
+    expect(bodyParsed).toHaveProperty("timestamp");
+    expect(bodyParsed.items).toEqual(items);
   });
 });
