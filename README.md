@@ -20,11 +20,6 @@ En este apartado realizaremos el despliegue blue/green de una API REST a través
 
 En este caso se ha elegido desarrollar una aplicación a través del framework **Express** de NodeJS, un framework que permite crear **APIs REST**. Así, será la propia aplicación la que mapee las rutas y los métodos a los recursos correspondientes. Como alternativas, en otros lenguajes de programación tendríamos Laravel (PHP) o SpringBoot (Java).
 
-![img](./imagenes/apirest1.png)
-
-
-
-
 ### Plantilla
 
 Puedes ver el código de la plantilla en el fichero [template.yaml](./template.yaml) del repositorio.
@@ -186,8 +181,6 @@ Los recursos que se crearán son:
     -   `Environment` - Variables de entorno disponibles para el código de la función. En este caso se definen dos: una que hace referencia a la tabla DynamoDB y otra al nombre de la etapa a desplegar.
     -   `Events` - Define la **conexión de la función con la API**. En este caso se realiza una integración de tipo **proxy**, donde **todas las peticiones HTTP** se **reenvían** para su procesado por la función Lambda.
     -   `DeploymentPreference` - [Estrategia de despliegue](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/automating-updates-to-serverless-apps.html). En este caso utilizaremos una estrategia blue/green de despliegue lineal de un 10% cada 1 minuto. Para ello se utilizará el **alias** de la función: **el tráfico que se envíe al alias se enviará de manera ponderada a la versión actual y a la nueva versión**. Para ello se utilizará el servicio **CodeDeploy**. También se hace referencia a la **alarma** creada anteriormente, que se utilizará para detectar si hay errores y de esta manera continuar con el proceso de conmutación de tráfico o abortarlo.
-        
-        ![img](./imagenes/lambdaalias.png)
 
 
 
@@ -263,11 +256,6 @@ De manera completamente opcional, puedes **desplegar tu propia aplicación web**
 En este segundo apartado desplegaremos una aplicación desde una pila de integración continua, CI/CD, utilizando el servicio de **GitHub Actions** y la herramienta **SAM**.
 
 En este caso se ha elegido desarrollar la aplicación mediante una **arquitectura de microservicios**, sin utilizar ningún framework de tipo Express, como en el caso anterior. Aquí, será el servicio **API Gateway** el que realice la distribución del tráfico y lo reenvíe a **diferentes funciones lambda de backend**.
-
-![img](./imagenes/apirest2.png)
-
-
-
 
 ### Plantilla
 
@@ -395,10 +383,6 @@ Los recursos que se crearán son:
 ### Integración continua
 
 Se proporciona un fichero de ejemplo, `pipeline.yaml`, con los diferentes trabajos que se realizarán cada vez que se suba un nuevo cambio al repositorio.
-
-![img](./imagenes/cipipeline.png)
-
-Puedes ver su contenido en el fichero [pipeline.yaml](./pipeline.yaml) del repositorio.
 
 <details> <summary> Pulsa para ver el contenido del fichero </summary>
 
