@@ -149,7 +149,7 @@ Crea un documento con:
 - **Guía Completa**: [GUIA_CICD_COMPLETA.md](./GUIA_CICD_COMPLETA.md)
 - **Plantilla Memoria**: [PLANTILLA_MEMORIA.md](./PLANTILLA_MEMORIA.md)
 - **Troubleshooting**: [TROUBLESHOOTING.md](./TROUBLESHOOTING.md)
-- **Pipeline**: [cicd/pipeline.yaml](./cicd/pipeline.yaml)
+- **Pipeline**: [pipeline.yaml](./pipeline.yaml)
 
 ---
 

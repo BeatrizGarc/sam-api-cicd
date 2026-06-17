@@ -27,7 +27,7 @@ En este caso se ha elegido desarrollar una aplicación a través del framework *
 
 ### Plantilla
 
-Puedes ver el código de la plantilla en el fichero [template.yaml](./cicd/template.yaml) del repositorio.
+Puedes ver el código de la plantilla en el fichero [template.yaml](./template.yaml) del repositorio.
 
 <details> <summary> Pulsa para ver el contenido del fichero </summary>
 
@@ -398,7 +398,7 @@ Se proporciona un fichero de ejemplo, `pipeline.yaml`, con los diferentes trabaj
 
 ![img](./imagenes/cipipeline.png)
 
-Puedes ver su contenido en el fichero [pipeline.yaml](./cicd/pipeline.yaml) del repositorio.
+Puedes ver su contenido en el fichero [pipeline.yaml](./pipeline.yaml) del repositorio.
 
 <details> <summary> Pulsa para ver el contenido del fichero </summary>
 
